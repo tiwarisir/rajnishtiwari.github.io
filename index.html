@@ -1,145 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rajnish Tiwari | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- AOS CSS Link -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerotobillionaire | Rajnish Tiwari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
 </head>
-<body>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition duration-300">
 
-  <section class="hero-upgrade">
-    <div class="hero-content">
-      <img src="assets/img/profile.jpg" alt="My Photo" class="profile-img">
-      <h1>Hi, I'm <span>Rajnish Tiwari </span></h1>
-      <p class="tagline">Cloud | DevOps | IT Admin | Automation Enthusiast</p>
-      <div class="hero-buttons">
-        <a href="Zerotobillionaire-CV.pdf" class="btn" download>📄 Download CV</a>
-        <a href="https://wa.me/919958572897" class="btn btn-outline">💬 Let's Chat</a>
+  <header class="p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800 z-10">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Zerotobillionaire</h1>
+      <button onclick="document.body.classList.toggle('dark')" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌗 Toggle</button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6 space-y-16">
+
+    <section id="about" class="space-y-4">
+      <h2 class="text-2xl font-bold">🧔‍♂️ About Me</h2>
+      <p>I’m <strong>Rajnish Tiwari</strong>, an IT Infrastructure & Support Engineer with 2.2+ years of experience. I specialize in system administration, automation, asset management, and security implementation.</p>
+      <p>My strength lies in managing hybrid infrastructure — from AD, Group Policies, DNS/DHCP on Windows Server to deploying tools like Snipe-IT and UVDesk on Ubuntu. I'm AWS-certified with hands-on in EC2, S3, IAM, CloudWatch, and VPC.</p>
+      <p>Currently focused on <strong>DevOps</strong>, <strong>Automation</strong>, and <strong>Cloud Infrastructure</strong> with a vision to build open-source solutions.</p>
+    </section>
+
+    <section id="projects" class="space-y-6">
+      <h2 class="text-2xl font-bold">⚒️ Projects</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="font-semibold">💻 IT Asset Management using Snipe-IT</h3>
+          <ul class="list-disc ml-6">
+            <li>Deployed on Ubuntu with Nginx and MySQL.</li>
+            <li>Stack: Ubuntu, PHP, MySQL, Nginx</li>
+            <li>Impact: Improved asset visibility and lifecycle tracking.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">☁️ Website Hosting on AWS EC2</h3>
+          <ul class="list-disc ml-6">
+            <li>Linux web server with Apache, hosted test site via public IP.</li>
+            <li>Stack: AWS EC2, Apache, Ubuntu</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">🖥️ AD + Windows/Linux Server Setup (Attentive.ai)</h3>
+          <ul class="list-disc ml-6">
+            <li>Managed AD, GPOs, VPN, DNS/DHCP, patching and monitoring.</li>
+            <li>Stack: Windows Server, VMware ESXi, Ubuntu/CentOS</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">🔐 Automation with Ansible Tower</h3>
+          <ul class="list-disc ml-6">
+            <li>Automated multi-OS provisioning using Ansible Tower.</li>
+            <li>Stack: Ansible Tower, Bash, YAML</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <section class="about-upgrade">
-    <div class="about-text" data-aos="fade-up">
-      <div class="about-image" data-aos="zoom-in">
-        <img src="assets/img/profile.jpg" alt="Zerotobillionaire">
+    </section>
+
+    <section id="skills" class="space-y-4">
+      <h2 class="text-2xl font-bold">🧠 Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div>
+          <h4 class="font-semibold">🏗️ IT Infrastructure</h4>
+          <ul class="list-disc ml-6">
+            <li>AD, GPO, Windows Server</li>
+            <li>DNS, DHCP, VPN</li>
+            <li>IIS, Bitdefender</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">🐧 Linux & Automation</h4>
+          <ul class="list-disc ml-6">
+            <li>Ubuntu, RHEL, Bash</li>
+            <li>Apache, Nginx</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">☁️ Cloud & DevOps</h4>
+          <ul class="list-disc ml-6">
+            <li>AWS (EC2, S3, IAM, VPC)</li>
+            <li>CloudWatch, Ansible, Git</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">🔒 Security & Tools</h4>
+          <ul class="list-disc ml-6">
+            <li>Sophos, Fortinet, Bitdefender</li>
+            <li>Microsoft 365, Netcore, New Relic</li>
+          </ul>
+        </div>
       </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m an IT Engineer with real-world experience in IT support, automation, and cloud.
-          I specialize in solving problems using open-source tools and scalable systems.
-        </p>
-        <p>
-          Currently mastering AWS, DevOps, and automation tools to lead future-ready teams.
-          I believe in executing every day — “Any How Boss Mode”.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="skills-upgrade">
-    <h2>Skills</h2>
-    <div class="skill">
-      <p>AWS</p>
-      <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
-    </div>
-    <div class="skill">
-      <p>Linux</p>
-      <div class="progress-bar"><div class="progress" style="width: 80%;">80%</div></div>
-    </div>
-    <div class="skill">
-      <p>Python/Bash</p>
-      <div class="progress-bar"><div class="progress" style="width: 75%;">75%</div></div>
-    </div>
-    <div class="skill">
-      <p>Git & GitHub</p>
-      <div class="progress-bar"><div class="progress" style="width: 70%;">70%</div></div>
-    </div>
-  </section>
-  
-  <section class="experience-upgrade">
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-  
-      <div class="timeline-item">
-        <span class="date">2024 – Present</span>
-        <h3>IT Executive – Attentive.ai</h3>
-        <p>Managing IT assets, Windows/Mac setup, user support via UVDesk & Slack, AD, servers & automation.</p>
-      </div>
-  
-      <div class="timeline-item">
-        <span class="date">2023 – 2024</span>
-        <h3>IT Executive – EaseMyTrip.com</h3>
-        <p>Handled antivirus, VPN, AD users, ticketing & compliance tools, endpoint issues, SOP documentation.</p>
-      </div>
-  
-      <div class="timeline-item">
-        <span class="date">2023</span>
-        <h3>Intern – Bestone Meest IT Services</h3>
-        <p>Installed OS, antivirus, VPN; prepared new systems and resolved user tickets.</p>
-      </div>
-  
-    </div>
-  </section>
-  
- 
-<section class="projects-upgrade">
-  <h2>Projects</h2>
-  <div class="project-list">
+    </section>
 
-    <div class="project-card">
-      <h3>🖥️ IT Asset Management – Snipe-IT</h3>
-      <p>Installed and configured Snipe-IT with MySQL, Apache on Ubuntu for full IT asset tracking across teams.</p>
-      <p><strong>Tech:</strong> Ubuntu, Apache, PHP, MySQL, Snipe-IT</p>
-      <a href="https://github.com/tiwarisir/snipeit-deploy" target="_blank" class="btn btn-outline">🔗 GitHub</a>
-    </div>
+    <section id="resume" class="space-y-2">
+      <h2 class="text-2xl font-bold">📜 Resume</h2>
+      <a href="https://tiwarisir.github.io/assets/resume.pdf" class="underline text-blue-500" target="_blank">Download My Resume (PDF)</a>
+    </section>
 
-    <div class="project-card">
-      <h3>🌐 EC2-Hosted Website</h3>
-      <p>Deployed a custom static website using Apache on AWS EC2, configured ports, keys, and file sync.</p>
-      <p><strong>Tech:</strong> AWS EC2, Apache2, HTML/CSS, Linux</p>
-      <a href="https://tiwarisir.github.io" target="_blank" class="btn btn-outline">🌍 Live</a>
-    </div>
+    <section id="contact" class="space-y-2">
+      <h2 class="text-2xl font-bold">📫 Contact</h2>
+      <ul class="list-none space-y-1">
+        <li>📍 Vaishali, Ghaziabad</li>
+        <li>📧 <a href="mailto:trajnish039@gmail.com" class="underline text-blue-400">trajnish039@gmail.com</a></li>
+        <li>🧑‍💻 <a href="https://github.com/tiwarisir" class="underline text-blue-400">GitHub</a></li>
+        <li>🔗 <a href="#" class="underline text-blue-400">LinkedIn</a></li>
+      </ul>
+    </section>
 
-    <div class="project-card">
-      <h3>🔐 Bash Script – Auto Secure Server</h3>
-      <p>Custom bash script to automate updates, firewall rules, SSH hardening for new Linux servers.</p>
-      <p><strong>Tech:</strong> Bash, UFW, Fail2ban, OpenSSH</p>
-      <a href="https://github.com/tiwarisir/linux-server-secure-script" target="_blank" class="btn btn-outline">🔗 GitHub</a>
-    </div>
+    <section id="vision" class="space-y-2">
+      <h2 class="text-2xl font-bold">🌟 Vision</h2>
+      <p><em>“My goal is to become a DevOps & Cloud Infrastructure expert, building open-source solutions that make IT systems smarter, faster, and scalable.”</em></p>
+    </section>
 
-  </div>
-</section>
+  </main>
 
-  
-<section class="contact-upgrade">
-  <h2>Contact Me</h2>
-  <p>Let’s connect and collaborate!</p>
-  <div class="contact-links">
-    <a href="mailto:trajnish039@gmail.com" target="_blank">📧 Email</a>
-    <a href="https://wa.me/919958572897" target="_blank">💬 WhatsApp</a>
-    <a href="https://www.linkedin.com/in/rajnish-tiwari-2a6724242/" target="_blank">💼 LinkedIn</a>
-    <span>📍 Vaishali, Ghaziabad</span>
-  </div>
-</section>
+  <footer class="p-4 text-center text-sm text-gray-500 dark:text-gray-400">
+    &copy; 2025 Zerotobillionaire | Built with 💻 by Rajnish Tiwari
+  </footer>
 
-<footer>
-  <p>© 2025 Zerotobillionaire. All rights reserved.</p>
-</footer>
-
-
-  <!-- AOS JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-
-</body>
 </body>
 </html>
